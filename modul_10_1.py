@@ -42,5 +42,5 @@ thr_third.join()
 thr_fourh.join()
 
 time2_stop = datetime.now()
-
+time2_res = time2_stop - time2_start
 print(f'Работа потоков {time2_res}')
