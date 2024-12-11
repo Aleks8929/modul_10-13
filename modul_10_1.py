@@ -22,7 +22,7 @@ write_words(100, 'example4.txt')
 time_stop = datetime.now()
 time_res = time_stop - time_start
 
-print(f'Время работы функций {time_res}')
+print(f'Работа потоков {time_res}')
 
 time2_start = datetime.now()
 
@@ -42,7 +42,5 @@ thr_third.join()
 thr_fourh.join()
 
 time2_stop = datetime.now()
-time2_res = time2_stop - time2_start
-print(f'Время работы потоков {time2_res}')
 
-print(f'Использование Потоков быстрее функций на {time_res - time2_res} секунд')
+print(f'Работа потоков {time2_res}')
