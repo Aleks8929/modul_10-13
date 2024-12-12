@@ -19,7 +19,7 @@ class Knight(Thread):
                 print(end="\n"f'{self.name}, на нас напали!')
             enemies -= self.power
             if enemies < 0: enemies = 0
-            print(end="\n"f'{self.name} сражается {days} день(дня), осталось {enemies} воинов врага.')
+            print(end="\n"f'{self.name} сражается {days} день(дня), осталось {enemies} воинов.')
         print(end="\n"f'{self.name} одержал победу спустя {days} дней(дня)!')
 
 
