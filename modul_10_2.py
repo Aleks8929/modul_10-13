@@ -10,12 +10,13 @@ class Knight(Thread):
         self.power = power
 
     def run(self):
-        print(f'{self.name}, на нас напали!')
         enemies = 100
         days = 0
         while enemies > 0:
             sleep(1)
             days += 1
+            if enemies == 100:
+                print(end="\n"f'{self.name}, на нас напали!')
             enemies -= self.power
             if enemies < 0: enemies = 0
             print(end="\n"f'{self.name} сражается {days} день(дня), осталось {enemies} воинов врага.')
