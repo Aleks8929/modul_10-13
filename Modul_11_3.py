@@ -2,12 +2,6 @@ import inspect
 from pprint import pprint
 
 
-class Modul():
-
-    def test(x):
-        pass
-
-
 def introspection_info(obj=None, **kwargs):
     info_dic: dict = {}
     try:
